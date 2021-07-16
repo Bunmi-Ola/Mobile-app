@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Personnel App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Heading">Personnel Display App</string>
+    <string name="PersonnelID">PersonnelID: </string>
+    <string name="PictureID">PictureID:</string>
+    <string name="Nametxt">Name: </string>
+    <string name="contactData">Contact Data Include</string>
+    <string name="Addresstxt">Address Details:</string>
+    <string name="Phonetxt">Phone number:</string>
+    <string name="Emailtxt">Email Address:</string>
+    <string name="position">Position(Job):</string>
+    <string name="supervisorName">Supervisor Name:</string>
+    <string name="Role">Choose your role:</string>
+    <string name="SupervisorRole">Supervisor</string>
+    <string name="StaffRole">Staff</string>
+    <string name="Birthdate">Birthdate:</string>
+    <string name="Agetxt">Age:</string>
+    <string name="Married">Married:</string>
+    <string name="Marriedyes">YES</string>
+    <string name="MarriedNO">NO</string>
+
+
+</resources>

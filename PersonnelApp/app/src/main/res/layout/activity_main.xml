@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/Background"
+    tools:context=".MainActivity">
+
+    <!-- Personnel INPUT SECTION -->
+
+    <!-- Personnel INPUT EDIT TEXT FIELD RECEIVES FOCUS -->
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="24sp"
+        android:text="@string/Heading"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/heading"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50px"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="10dp"
+        android:text="@string/Nametxt"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    <EditText
+        android:id="@+id/nameEdittxt"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginStart="59dp"
+        android:layout_toEndOf="@+id/textView1"
+        android:hint="Enter a name"
+        android:inputType="text"
+        android:maxLength="6"></EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50px"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="@string/PersonnelID"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    <EditText
+        android:id="@+id/personnerIdEdittxt"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEdittxt"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:hint="Enter PersonnelID"
+        android:inputType="number"
+        android:maxLength="6"></EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50px"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:text="@string/PictureID"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    <EditText
+        android:id="@+id/pictureIdEdittxt"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personnerIdEdittxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:hint="Enter PictureID"
+        android:inputType="text"
+        android:maxLength="6"></EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50px"
+        android:text="@string/contactData"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50px"
+        android:text="@string/Addresstxt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/addressEdittxt"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:hint="Enter address"
+        android:inputType="text"
+        android:maxLength="6"></EditText>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50px"
+        android:text="@string/Phonetxt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/phoneEdittxt"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressEdittxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:hint="Enter phone number"
+        android:inputType="text"
+        android:maxLength="6"></EditText>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50px"
+        android:text="@string/Emailtxt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/EmailEdittxt"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEdittxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:hint="Enter email address"
+        android:inputType="text"
+        android:maxLength="6"></EditText>
+
+    <TextView
+    android:id="@+id/textView8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView7"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="50px"
+    android:text="@string/position"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/PositionEdittxt"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EmailEdittxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:hint="Enter Position"
+        android:inputType="text"
+        android:maxLength="6"></EditText>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50px"
+        android:text="@string/supervisorName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/supervisorEdittxt"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PositionEdittxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView9"
+        android:hint="Enter supervisor name"
+        android:inputType="text"
+        android:maxLength="6"></EditText>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50px"
+        android:text="@string/Role"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supervisorEdittxt"
+        android:layout_toEndOf="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/SupervisorRole"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/StaffRole"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50px"
+        android:text="@string/Birthdate"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/BirthdayEdittxt"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView11"
+        android:hint="Enter birthday"
+        android:inputType="text"
+        android:maxLength="6"></EditText>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50px"
+        android:text="@string/Agetxt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/Agetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/BirthdayEdittxt"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/textView12"
+        android:hint="Age"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="50px"
+        android:text="@string/Married"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Agetxt"
+        android:layout_toEndOf="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp">
+
+
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:text="@string/Marriedyes"/>
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/MarriedNO"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>

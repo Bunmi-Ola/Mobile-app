@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "145825670757",
+    "firebase_url": "https://pushfcm-c1880.firebaseio.com",
+    "project_id": "pushfcm-c1880",
+    "storage_bucket": "pushfcm-c1880.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145825670757:android:f505d0f14da81a3a70488c",
+        "android_client_info": {
+          "package_name": "com.comp262.bunmi.comp262finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145825670757-jstlule0o7sr7b7g44ue40pgjgq4c02d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt63T0Xxp6v-WzJcbHniU5dcD1ioyRj8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145825670757-jstlule0o7sr7b7g44ue40pgjgq4c02d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
